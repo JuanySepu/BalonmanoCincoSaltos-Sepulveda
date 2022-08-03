@@ -1,6 +1,17 @@
+$redes:(
+    facebook:#3b5999,
+    instagram:#e4405f,
+    youtube:#bd081c,
+);
+
+$estilos:(
+    bgcolor:#161414,
+    centro: center,
+);
+
 footer{
     padding: 0px 40px;
-    background: #161414;
+    background: map-get($estilos, bgcolor);
     text-align: center;
 
     div{
@@ -58,21 +69,11 @@ footer{
                     }
                 }
 
-                .facebook{
-                    &:hover{
-                        background: #3b5999;
-                    }
-                }
-
-                .instagram{
-                    &:hover{
-                        background: #e4405f;
-                    }
-                }
-
-                .youtube{
-                    &:hover{
-                        background: #bd081c;
+                @each $red, $color in $redes {
+                    .#{$red}{
+                        &:hover{
+                            background: $color;
+                        }
                     }
                 }
             }
