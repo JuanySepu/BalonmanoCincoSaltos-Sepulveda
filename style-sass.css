@@ -130,28 +130,148 @@ html {
   scroll-behavior: smooth;
 }
 
-img {
+.imagenes, #nosotros .nosotros__img .imgBox img {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
 }
 
-section {
-  font-size: 1.5rem;
-  padding: 100px;
-  background: #161414;
-}
-section .seccion .titulo .texto__titulo {
+.titulo, section .seccion .titulo .texto__titulo, #info .info__ubicacion .texto__titulo, #info .info__horarios .texto__titulo, #nosotros .nosotros__texto .texto__titulo {
   text-align: center;
   color: #fff;
   font-size: 2em;
   font-weight: 300;
 }
-section .seccion .titulo .texto__titulo span {
+.titulo span, section .seccion .titulo .texto__titulo span, #info .info__ubicacion .texto__titulo span, #info .info__horarios .texto__titulo span, #nosotros .nosotros__texto .texto__titulo span {
   color: red;
   font-weight: 700;
   font-size: 1.5em;
+}
+
+.subtitulo, #info .info__ubicacion .texto__subtitulo, #info .info__horarios .texto__subtitulo {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.parrafo, #info .info__ubicacion .texto__parrafo p, #info .info__horarios .texto__parrafo p, #nosotros .nosotros__texto .texto__parrafo {
+  font-weight: 300;
+  color: #fff;
+}
+
+.boton, #nosotros .nosotros__texto .btn, #banner .banner__contenido .btn {
+  font-size: 1em;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.boton:hover, #nosotros .nosotros__texto .btn:hover, #banner .banner__contenido .btn:hover {
+  border: 1px solid red;
+  background: red;
+}
+
+.informacion, #info .info__ubicacion, #info .info__horarios {
+  padding: 0 5px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-right: 2px solid #515151;
+  border-left: 2px solid #515151;
+}
+
+#banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./img/img2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#banner .banner__contenido {
+  max-width: 100rem;
+  text-align: center;
+}
+#banner .banner__contenido h1 {
+  font-size: 6rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+#banner .banner__contenido p {
+  font-size: 2rem;
+  color: #fff;
+}
+#nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+#nosotros .nosotros__texto {
+  font-size: 1em;
+  grid-column: 1/2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#nosotros .nosotros__texto .texto__parrafo {
+  text-align: center;
+}
+#nosotros .nosotros__img {
+  grid-column: 2/3;
+}
+#info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+#info .info__horarios {
+  grid-column: 1/2;
+}
+#info .info__horarios .texto__parrafo {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#info .info__ubicacion {
+  grid-column: 2/3;
+}
+#info .info__ubicacion .texto__parrafo {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#info .info__mapa {
+  padding: 0 5px;
+  grid-column: 3/4;
+  border-right: 2px solid #515151;
+  border-left: 2px solid #515151;
+}
+
+section {
+  font-size: 1.5rem;
+  padding: 100px;
+  background: #161414;
 }
 section .seccion .partido {
   margin-top: 10px;
