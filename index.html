@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style-sass.css">
     <link rel="icon" href="./img/icono-escudo.ico">
     <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/db01dd99de.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <meta name="description" content="Este es el sitio web de la Asociación Balonmano Cinco Saltos, en esta página encontrarás información sobre nosotros, ubicación y horarios de entrenamiento.">
@@ -17,8 +18,11 @@
 <body>
     <header>
         <nav class="nav contenedor" id="nav">
+
             <a href="#banner" class="logo"><img src="./img/escudo.png" alt=""></a>
         
+            <input type="checkbox" id="check__menu">
+
             <div class="navegador" id="navLinks">
                 <ul class="menu__items">
                     <li><a href="#banner">Inicio</a></li>
@@ -29,15 +33,11 @@
                 </ul>
             </div>
 
-            <!-- <a href="#nav" class="nav__hamburguer">
-                <img src="./assets/menu.svg" class="nav__icon">
-            </a>
-            
-            <a href="#" class="nav__hamburguer">
-                <img src="./assets/close.svg" class="nav__icon">
-            </a> -->
+            <label id="label__check" for="check__menu">
+                <i class="fas fa-bars icon__menu"></i>
+            </label>
+
         </nav>
-        
     </header>
 
     <section class="banner" id="banner">

@@ -7,6 +7,8 @@
     <title>Balonmano Cinco Saltos</title>
     <link rel="stylesheet" href="../style-sass.css">
     <link rel="icon" href="../img/icono-escudo.ico">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/db01dd99de.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Link Bootstrap -->
@@ -17,24 +19,28 @@
 
   </head>
 <body>
-    <header>
-        <nav>
-            <a href="../index.html" class="logo"><img src="../img/escudo.png" alt=""></a>
-        
-            <div class="navegador">
-                <i class='bx bx-x' onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./partidos.html">Calendario y partidos</a></li>
-                    <li><a href="./tabla.html">Tabla de Posiciones</a></li>
-                    <li><a href="./media.html">Media</a></li>
-                    <li><a href="./contactenos.html">Contacto</a></li>
-                </ul>
-            </div>
-            <i class='bx bx-menu' onclick="showMenu()"></i>
-        </nav>
-        
-    </header>
+  <header>
+    <nav class="nav contenedor" id="nav">
+
+        <a href="../index.html" class="logo"><img src="../img/escudo.png" alt=""></a>
+    
+        <input type="checkbox" id="check__menu">
+
+        <div class="navegador" id="navLinks">
+            <ul class="menu__items">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./partidos.html">Calendario y partidos</a></li>
+                <li><a href="./tabla.html">Tabla de Posiciones</a></li>
+                <li><a href="./media.html">Media</a></li>
+                <li><a href="./contactenos.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <label id="label__check" for="check__menu">
+            <i class="fas fa-bars icon__menu"></i>
+        </label>
+    </nav>
+</header>
 
     <section id="tabla">
         <div class="tituloBox">
