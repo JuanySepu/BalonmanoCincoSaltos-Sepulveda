@@ -373,6 +373,9 @@ section .seccion .partido span {
   flex-direction: column;
   align-items: center;
 }
+#tabla .table{
+  margin-top: 5em;
+}
 #media {
   font-size: 1.5rem;
 }
