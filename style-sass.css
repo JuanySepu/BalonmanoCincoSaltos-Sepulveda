@@ -602,6 +602,16 @@ section .seccion .partido span {
       border-bottom: 2px solid #515151;
   }
 
+  #partidos .seccion .partido {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #partidos .seccion .partido .equipos{
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+
   #media .partidos__imagenes .contenedor {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -735,6 +745,10 @@ section .seccion .partido span {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
+  }
+
+  #partidos .seccion .partido .equipos{
+    font-size: 1.1em;
   }
 
   #media .partidos__imagenes .contenedor {
